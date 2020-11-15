@@ -1,0 +1,10 @@
+**/*.svg
+dist/
+.history
+.vscode
+LICENSE
+.gitignore
+.prettierignore
+.editorconfig
+.eslintignore
+**/*.yml

@@ -1,0 +1,8 @@
+build
+config
+dist
+node_modules
+*.js
+.idea
+.vscode
+.history

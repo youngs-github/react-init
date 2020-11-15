@@ -1,0 +1,60 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:react/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "prettier"
+  ],
+  "plugins": ["react", "react-hooks", "babel", "jest", "@typescript-eslint", "prettier"],
+  "rules": {
+    // 空格缩进
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    // 单引号引用字符串
+    "quotes": ["error", "single"],
+    // 必须使用分号结束
+    "semi": ["error", "always"],
+    // 不允许tab缩进
+    "no-tabs": "error",
+    "no-var": "error",
+    "no-debugger": "error",
+    "no-func-assign": "error",
+    "no-unused-vars": "off",
+
+    "react-hooks/rules-of-hooks": "error",
+    // "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      { "vars": "all", "args": "none", "ignoreRestSiblings": false }
+    ],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-var-requires": "warn",
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/unbound-method": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "16.13"
+    }
+  }
+}
