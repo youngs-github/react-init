@@ -1,6 +1,6 @@
 # 项目技术栈
 
-node12.19.0 + react@16.13.1 + mobx@5.15.7 + redux@4.0.5 + antd@4.5.4 + webpack@4.43.0
+node12.19.0 + react@16.13.1 + mobx@5.15.7 + redux@4.0.5 + antd@4.5.4 + typescript@3.9.3 + webpack@4.43.0
 
 # 项目运行
 
