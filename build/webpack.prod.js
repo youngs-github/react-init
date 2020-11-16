@@ -75,6 +75,8 @@ const webpackConfig = merge(baseWebpackConfig, {
     new CopyWebpackPlugin(CopyAssetsList),
     // moment的locale
     new webpack.ContextReplacementPlugin(/moment[/\\]locale$/, /zh-cn/),
+    // 自动拷贝至nginx之类
+    new utils.CopyDistFilePlugin(),
   ],
   optimization: {
     minimizer: [
@@ -116,7 +118,7 @@ if (false) {
 }
 
 // 分析工具
-if (true) {
+if (false) {
   webpackConfig.plugins.push(
     new webpackBundleAnalyzer.BundleAnalyzerPlugin({
       analyzerHost: 'localhost',
