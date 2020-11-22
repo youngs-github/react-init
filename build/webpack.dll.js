@@ -17,7 +17,7 @@ const dllConfig = {
     react: ['react', 'react-dom', 'react-hot-loader', 'react-router', 'react-router-dom'],
     mobx: ['mobx', 'mobx-react'],
     redux: ['redux', 'redux-thunk', 'react-redux'],
-    echarts: ['echarts', 'lodash', 'moment', 'cytoscape', 'd3-force'],
+    // echarts: ['echarts', 'lodash', 'moment', 'cytoscape', 'd3-force'],
   },
   output: {
     path: `${dll_path}${dll_paths.join('')}`,
